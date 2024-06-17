@@ -8,7 +8,7 @@ public class ArraySumOptimized {
         int low= 0;  //0
         int high= arr.length-1;  //4
 
-        while(low<=high){
+        while(low<high){
             int current_sum = arr[low] + arr[high];
             if(current_sum == given_sum){
                 System.out.println(low+" "+high+" "+current_sum);
