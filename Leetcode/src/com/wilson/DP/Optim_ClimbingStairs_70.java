@@ -11,12 +11,13 @@ public class Optim_ClimbingStairs_70 {
         System.out.println("Total ways to climb stair is "+totalWays(0, n, new HashMap<Integer, Integer>()));
     }
     private static int totalWays(int currentStair, int targetStair, HashMap<Integer, Integer> memo) {
+        System.out.println(memo);
             if (targetStair == currentStair)
                 return 1;
             if (targetStair < currentStair)
                 return 0;
 
-            int currentKey = currentStair;;
+            int currentKey = currentStair;
             if(memo.containsKey(currentKey)){
                 return memo.get(currentKey);
             }
